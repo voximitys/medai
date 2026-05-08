@@ -1,2 +1,2 @@
 # medai
-API for accessing Chat interfaces through MedAI APIs
+API for accessing Chat interfaces through Prepaid MedAI' APIs,
