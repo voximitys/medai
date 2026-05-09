@@ -793,7 +793,7 @@
           <div class="model-menu" id="model-menu"></div>
         </div>
         <div class="topbar-right">
-          <button class="icon-btn" id="download-chat-btn" title="Download current chat as readable HTML">
+          <button class="icon-btn" id="download-chat-btn" title="Download current chat as an HTMLTranscript">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
               <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
               <polyline points="7 10 12 15 17 10"/>
@@ -2179,7 +2179,7 @@
       const html = chatToStandaloneHtml(c);
       const safe = (c.title || "chat").replace(/[^\w\-]+/g, "_").slice(0, 60) || "chat";
       downloadFile(`${safe}.html`, html, "text/html;charset=utf-8");
-      toast("Downloaded readable HTML transcript", "success");
+      toast("Downloaded HTML Transcript!", "success");
     }
 
     function chatToStandaloneHtml(c) {
